@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+ :root{
+
+        --shadowcolor--: #6e0808;
+    --backcolor--: #cac3c3f1;
+background-image: linear-gradient(to left, #cac3c3f1,#b6b0b06c,#a8a2a23f);
+    }
+
+   header{
+      margin-top: -8px;
+      margin-left: 1px;
+      height: 76px;
+      background-image: linear-gradient(to right, #200101, var(--shadowcolor--));
+      width: 100%;
+      box-shadow: 1px 2px 90px;
+    }
+
+ input[type="radio"]{
+    accent-color: red;
+    height: 6px;
+  margin-top: 20%;
+  display: flex;
+  flex-flow: row wrap;
+   
+   gap: 80px;
+ }
+
+ #ilefter, #irighter{
+    height: 100%;
+    width: 100%;
+    border: 10px solid var(--shadowcolor--);
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 20px;
+  filter: blur(1px);
+   
+ }
+
+ #ilefter{
+    margin-left: 15%;
+     margin-top: 25%;
+     transition: margin-left 0.5 ease;
+     position: absolute;
+     background-size: cover;
+ }
+
+ #irighter{
+   margin-left: 65%;
+   margin-top: 17px;
+   transition: margin-left 0.5 ese;
+   position: absolute;
+   
+ }
+
+ #icenter{
+    height: 390px;
+   margin-left: 6%;
+   transition: margin-left 0.5 ase;
+   margin-top: 8%;
+ }
+
+.checkidea-testprodu{
+    display: flex;
+    gap: 0px;
+    flex-flow: row wrap;
+}
+
+.hover-fliptest{
+    position: relative;
+    height: 40px;
+    
+
+}
+
+.hover-fliptestcontainer{
+    transition: 2s ease-in-out;
+    transform-style: preserve-3d;
+    position: absolute;
+}
+
+#ilefter, #produ-imgleft-tras{
+    position: absolute;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+
+#irighter, #produ-imgright-tras{
+     position: absolute;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+
+#icenter, #produ-imgcenter-tras{
+    position: absolute;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+
+#produ-imgleft-tras{
+    transform: rotateY(180deg);
+}
+
+.hover-fliptest:hover .hover-fliptestcontainer{
+    transform: rotateY(180deg);
+}
+
+#iradio1:checked ~ #ilefter{
+    margin-left: 30%;
+    cursor: default;
+
+}
+
+#iradio3:checked ~ #irighter{
+    margin-left: -20px;
+    cursor: default;
+}
+
+#radio2:checked ~ #icenter{
+    margin-left: 30%;
+    cursor: default;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div class="checkidea-testprodu">
+
+        <input type="radio" id="iradio1" name="option" value="1">
+       
+        <input type="radio" id="iradio2" name="option" value="2">
+        
+        <input type="radio" id="iradio3" name="option" value="3">
+     
+<div class="hover-fliptest">
+
+        <img src="product-image-slideleft.png" id="ilefter" class="hover-fliptestcontainer">
+        <img src="" id="produ-imgleft-tras">
+
+        <img src="product-image-slidecenter.png" id="icenter" >
+        <img src="" id="produ-imgcenter-tras">
+        p
+
+        <img src="product-image-slideright.png" id="irighter" class="hover-fliptestcontainer">
+        <img src="" id="produ-imgright-tras" >
+
+
+        </div>
+
+    </div>
+</body>
+</html>
