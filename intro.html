@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html, body{
+            height: 150%;
+           margin-left: -10px;
+            padding: 0;
+        }
+        body{
+            background-image: linear-gradient(to right, #424242, #4b4b4b, #222121);
+            box-shadow: inset 10px 50px 10px rgb(51, 51, 51);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 190vh;
+            margin-top: -1px;
+            position:relative;
+        }
+
+        a{
+            text-decoration: none;
+            font-family: Dancing Script;
+
+        }
+
+        #itit{
+            margin-left: 20%;
+            margin-top: 90px;
+            display: flex;
+            box-shadow: -10px 52px 20px rgb(83, 83, 83);
+            width: 88px;
+            color: rgb(138, 136, 136);
+            font-weight: lighter;
+            animation: fade-in-left 3s ease-in-out;
+        }
+
+     #ilogotype-produ{
+        margin-left: 40%;
+        margin-top: 30%;
+        height: 200px;
+        width: 200px;
+        animation: fade-in-bottom 4s ease;
+     }
+
+     #ipginicial-button{
+        margin-left: 30%;
+        margin-top: 45%;
+        display:flex;
+        animation: fade-in-bottom 1.7s ease alternate infinite ;
+     }
+
+     .container{
+      
+        padding-top: 60px;
+     }
+
+     #ipginicial-button{
+
+        transform: margin-top 1s ease;
+        animation: lift 1s ease;
+
+     }
+
+
+     @keyframes fade-in-bottom{
+
+        0%{
+
+            margin-top: 100%;
+            opacity: 4;
+            filter: blur(2px);
+
+        }
+
+        20%{
+            margin-top: 70%;
+            opacity: 3;
+            filter: blur(1px);
+        }
+
+        50%{
+            margin-top:  60%;
+            opacity: 2;
+            filter: blur(3px)
+        }
+    
+        100%{
+
+     margin-top: 40%;
+     opacity: 0;
+     filter: brightness(2px);
+
+        }
+
+     }
+
+     @keyframes fade-in-left{
+        0%{
+            margin-left: -30px;
+            opacity: 3;
+            filter: blur(3px);
+            text-shadow: 3px 3px 3px black;
+        }
+
+          20%{
+            margin-left: 10px;
+            opacity: 2;
+            filter: blur(2px);
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.678);
+
+        }
+
+        50%{
+            margin-left: 10px;
+        }
+
+      
+        100%{
+            margin-left: 20%;
+            opacity: 1;
+            filter: brightness(2px);
+         
+        }
+     }
+    
+     @keyframes lift{
+        from{
+            margin-top: 120%;
+        }
+        to{
+            margin-top: 60%;
+        }
+     }
+
+
+
+    </style>
+</head>
+<body>
+ 
+    <div class="container">
+    <a id="itit" href="">Lightness.io</a>
+
+    <img id="ilogotype-produ" src="" alt="">
+
+    <a id="ipginicial-button" href="Entrar">Entrar</a>
+
+    </div>
+</body>
+</html>
